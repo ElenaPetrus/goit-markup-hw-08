@@ -1,0 +1,35 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    color: var(--accent-color);
+}
+.header__logo{
+    margin-right: 93px;
+    animation-name: slideInDown;
+    animation-duration: 1500ms;
+}
+.logo__part2--dark {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+    color: var(--secondblack-color);      
+}
+.footer__logo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.logo__part2--light {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--contrast-color);
+}

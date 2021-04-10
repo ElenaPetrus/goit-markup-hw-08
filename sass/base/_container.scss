@@ -1,0 +1,46 @@
+
+.container {
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 1200px;
+}
+  .header__container {
+   display: flex;
+   align-items: center;
+}
+.hero__container{
+   text-align: center;
+   padding: 200px 15px;
+
+}
+.advantages__container{
+   display: flex;
+   align-items: center;
+   padding-top: var(--section-top);
+   padding-bottom:var(--section-btm);
+}
+.competence__container{
+   padding-bottom: var(--section-btm);
+}
+.team__container{
+   padding-top: var(--section-top);
+   padding-bottom: var(--section-btm);
+}
+.clients__container{
+   padding-top: var(--section-btm);
+   padding-bottom: 88px;
+   
+}
+.footer__container {
+   display: flex;
+   align-items: baseline;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.filtre__container{
+   padding-top: var(--section-top);
+   padding-bottom: var(--section-btm);
+   }
+ 
+
