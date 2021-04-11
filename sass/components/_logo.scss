@@ -6,12 +6,20 @@
     letter-spacing: 0.03em;
     
     color: var(--accent-color);
+
 }
 .header__logo{
-    margin-right: 93px;
+    margin-right: 88px;  
     animation-name: slideInDown;
     animation-duration: 1500ms;
+
 }
+@media screen and (min-width: 1200px) {
+    .header__logo{
+    margin-right: 93px;
+    }
+}
+
 .logo__part2--dark {
     font-family: var(--secondary-font);
     font-weight: bold;

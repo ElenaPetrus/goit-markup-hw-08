@@ -5,18 +5,25 @@
 .header__container{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+ 
 } 
 @media screen and (min-width:480px){
    .container{
       width:480px;
       margin: 0 auto;
+      justify-content: space-between;
    } 
- 
+}
+@media screen and (max-width:767px){
+   .container{
+   padding-top: 16px;
+   padding-bottom: 16px;
+   }
 }
 @media screen and (min-width:768px){
    .container{
       width:768px;
+      background-color: salmon;
    }  
 }
 @media screen and (min-width:1200px){
@@ -25,16 +32,8 @@
    }  
 }
 
-/*.container {
-   margin: 0 auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   width: 1200px;
-}
-.header__container {
-   display: flex;
-   align-items: center;
-}
+/*
+
 .hero__container{
    text-align: center;
    padding: 200px 15px;
