@@ -8,6 +8,9 @@
    justify-content: space-between;
  
 } 
+.hero__container{
+   text-align: center;
+}
 @media screen and (min-width:480px){
    .container{
       width:480px;
@@ -28,16 +31,15 @@
 @media screen and (min-width:1200px){
    .container{
       width:1200px;
+   }
+   .hero__container{
+      padding: 200px;
+      }
    }  
-}
+
+
 
 /*
-
-.hero__container{
-   text-align: center;
-   padding: 200px 15px;
-
-}
 .advantages__container{
    display: flex;
    align-items: center;

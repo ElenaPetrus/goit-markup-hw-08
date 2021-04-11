@@ -30,6 +30,7 @@
     .mob-menu{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         position: fixed;
         top:0;
         left:50%;
@@ -80,11 +81,7 @@
            &:focus {
            color: var(--accent-color);
            }
-    }
-    .mob-contact__list{
-        margin-top: 302px;
-    }  
-        
+    }       
     .mob-contact__item:not(:last-child){
             margin-bottom: 32px; 
     }

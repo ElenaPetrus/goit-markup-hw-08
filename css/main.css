@@ -92,6 +92,10 @@ img {
   justify-content: space-between;
 }
 
+.hero__container {
+  text-align: center;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -116,15 +120,12 @@ img {
   .container {
     width: 1200px;
   }
+  .hero__container {
+    padding: 200px;
+  }
 }
 
 /*
-
-.hero__container{
-   text-align: center;
-   padding: 200px 15px;
-
-}
 .advantages__container{
    display: flex;
    align-items: center;
@@ -493,6 +494,7 @@ button {
   .mob-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 50%;
@@ -535,9 +537,6 @@ button {
   }
   .mob-menu__link:hover, .mob-menu__link:focus {
     color: var(--accent-color);
-  }
-  .mob-contact__list {
-    margin-top: 302px;
   }
   .mob-contact__item:not(:last-child) {
     margin-bottom: 32px;
