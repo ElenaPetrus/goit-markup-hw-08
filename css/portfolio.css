@@ -83,13 +83,13 @@ img {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
     margin: 0 auto;
-    justify-content: space-between;
   }
 }
 
@@ -103,7 +103,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: salmon;
   }
 }
 
@@ -377,13 +376,8 @@ button {
   .mob-contact__link--tel:focus {
     color: var(--accent-color);
   }
-  .mob-contact__link--mail {
-    font-size: 24px;
-    line-height: 1.17;
-  }
   .mob-social__list {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 64px;
   }
@@ -402,6 +396,16 @@ button {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mob-contact__link--mail,
+  .mob-contact__link--tel {
+    font-size: 26px;
+  }
+  .mob-social__link {
+    font-size: 12px;
   }
 }
 

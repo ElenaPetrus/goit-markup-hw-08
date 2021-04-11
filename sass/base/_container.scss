@@ -5,13 +5,13 @@
 .header__container{
    display: flex;
    align-items: center;
+   justify-content: space-between;
  
 } 
 @media screen and (min-width:480px){
    .container{
       width:480px;
       margin: 0 auto;
-      justify-content: space-between;
    } 
 }
 @media screen and (max-width:767px){
@@ -23,7 +23,6 @@
 @media screen and (min-width:768px){
    .container{
       width:768px;
-      background-color: salmon;
    }  
 }
 @media screen and (min-width:1200px){
