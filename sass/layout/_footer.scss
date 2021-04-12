@@ -2,11 +2,18 @@
     margin: 0 auto;
     background-color:var(--footer-color);
 }
-.contact{
-    min-width: 231px;
-}
+
 .footer__contact{
-    margin-right: 70px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 60px;
+}
+.address-list__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .address-list__link--postal {
@@ -32,7 +39,8 @@ margin-top: 9px;
     display: inline-block;
 }
 .join-networks {
-    min-width: 206px;
+    margin: 0 auto 60px;
+    max-width: 206px;
 
     &__text {
         display: block;
@@ -47,75 +55,128 @@ margin-top: 9px;
         color: var(--contrast-color);
     }
 }
-.footer__join-networks{
-    margin-right: 93px;
+.join-networks__text{
+    text-align: center;
 }
-
 .signup{
-    min-width: 570px;
-
-    &__text{
-        display: block;
-        margin-bottom: 20px;
-        font-family: var(--main-font);
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--contrast-color);
-    
+         &__text{
+            display: block;
+            margin-bottom: 20px;
+            font-family: var(--main-font);
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--contrast-color);
+        
+        }
     }
-}
-.sign-form{
-    display: flex;
-    justify-content: space-between;
-
-    &__btn{
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-        min-width: 200px;
-        padding: 10px 28px;
+    .sign-form{
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 200px;
+            padding: 10px 28px;
+            margin: 20px auto 0;
+        
+            background:var(--accent-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            cursor: pointer;
+             
+            font-family:var(--main-font);
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            color: var(--contrast-color);
+        }
+        &__icon{
+            fill: var(--contrast-color);
+        }
+    }
+    .signup__text{
+        text-align: center;
+    }
+    .sign-form__input{
+        width: 100%;
+        height: 50px;
     
-        background:var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: border-color 250ms var(--cubic);
+    
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        cursor: pointer;
-         
-        font-family:var(--main-font);
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
         color: var(--contrast-color);
+    
+        &:focus{
+            outline: none;
+            border-color: var(--contrast-color);
+        }
+        &::placeholder{
+            font-family: Roboto;
+            @include font(normal, 16px);
+            line-height: 1,25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
     }
-    &__icon{
-        fill: var(--contrast-color);
+
+    @media screen and (min-width:768px){
+        .footer__contact{
+            margin-right: 165px;
+        }
+        .sign-form__input{
+            width: 450px;
+            }
+        .join-networks{
+            min-width: 206px;
+            margin: 0;
+            }
+        }
+
+    @media screen and (min-width:1200px){
+        .contact{
+            min-width: 231px;
+            }
+        .footer__contact{
+            align-items: flex-start;
+            margin-right: 70px;
+            }
+        .address-list__item{
+                justify-content: flex-start;
+        }
+         
+        .join-networks {
+             min-width: 206px;
+             &__text{
+            text-align: start;
+            }
+        }
+        .footer__join-networks{
+            margin-right: 93px;
+            }
+                
+        .signup{
+            min-width: 570px;
+            &__text{
+            text-align: start;
+            }
+        }
+        .sign-form{
+           display: flex;
+            justify-content: space-between;
+        }
+        .sign-form__input{
+             width: 358px;
+            height: 50px;
+        }
+        .sign-form__btn{
+            margin: 0;
+        }
+                         
     }
-}
 
-.sign-form__input{
-    width: 358px;
-    height: 50px;
-
-    transition: border-color 250ms var(--cubic);
-
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: var(--contrast-color);
-
-    &:focus{
-        outline: none;
-        border-color: var(--contrast-color);
-    }
-    &::placeholder{
-        font-family: Roboto;
-        @include font(normal, 16px);
-        line-height: 1,25;
-        letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
-    }
-}
