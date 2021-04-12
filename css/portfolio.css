@@ -93,9 +93,10 @@ img {
 
 .advantages__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: var(--section-top-ntdt);
-  padding-bottom: var(--section-top-ntdt);
+  padding-top: var(--section-btm-ntdt);
+  padding-bottom: var(--section-btm-ntdt);
 }
 
 @media screen and (min-width: 480px) {
@@ -106,7 +107,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .header__container {
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -115,6 +116,9 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+  .advantages__container {
+    flex-direction: row;
   }
 }
 

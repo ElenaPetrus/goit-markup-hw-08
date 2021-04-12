@@ -16,10 +16,11 @@
 
 .advantages__container{
    display: flex;
+   flex-direction: column;
    align-items: center;
-   padding-top: var(--section-top-ntdt);
-   padding-bottom:var(--section-top-ntdt);
-   } 
+   padding-top: var(--section-btm-ntdt);
+   padding-bottom: var(--section-btm-ntdt);
+} 
 
 @media screen and (min-width:480px){
    .container{
@@ -29,7 +30,7 @@
 }
 
 @media screen and (max-width:767px){
-   .container{
+   .header__container{
    padding-top: 16px;
    padding-bottom: 16px;
    }
@@ -39,6 +40,9 @@
    .container{
       width:768px;
    }  
+   .advantages__container{
+      flex-direction: row;
+   }
 }
 @media screen and (min-width:1200px){
    .container{
@@ -48,8 +52,8 @@
       padding: 200px;
       }
    .advantages__container{
-         padding-top: var(--section-top);
-         padding-bottom:var(--section-btm);
+      padding-top: var(--section-top);
+      padding-bottom:var(--section-btm);
    }
 }  
 
