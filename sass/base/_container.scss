@@ -2,27 +2,39 @@
    padding-left: 15px;
    padding-right: 15px;
 }
+
 .header__container{
    display: flex;
    align-items: center;
    justify-content: space-between;
  
 } 
+
 .hero__container{
    text-align: center;
 }
+
+.advantages__container{
+   display: flex;
+   align-items: center;
+   padding-top: var(--section-top-ntdt);
+   padding-bottom:var(--section-top-ntdt);
+   } 
+
 @media screen and (min-width:480px){
    .container{
       width:480px;
       margin: 0 auto;
-   } 
+   }
 }
+
 @media screen and (max-width:767px){
    .container{
    padding-top: 16px;
    padding-bottom: 16px;
    }
 }
+
 @media screen and (min-width:768px){
    .container{
       width:768px;
@@ -35,38 +47,32 @@
    .hero__container{
       padding: 200px;
       }
-   }  
+   .advantages__container{
+         padding-top: var(--section-top);
+         padding-bottom:var(--section-btm);
+   }
+}  
 
 
-
-/*
-.advantages__container{
-   display: flex;
-   align-items: center;
-   padding-top: var(--section-top);
-   padding-bottom:var(--section-btm);
-}
-.competence__container{
-   padding-bottom: var(--section-btm);
-}
-.team__container{
-   padding-top: var(--section-top);
-   padding-bottom: var(--section-btm);
-}
-.clients__container{
-   padding-top: var(--section-btm);
-   padding-bottom: 88px;
+// .competence__container{
+//    padding-bottom: var(--section-btm);
+// }
+// .team__container{
+//    padding-top: var(--section-top);
+//    padding-bottom: var(--section-btm);
+// }
+// .clients__container{
+//    padding-top: var(--section-btm);
+//    padding-bottom: 88px;
    
-}
-.footer__container {
-   display: flex;
-   align-items: baseline;
-   padding-top: 60px;
-   padding-bottom: 60px;
-}
-.filtre__container{
-   padding-top: var(--section-top);
-   padding-bottom: var(--section-btm);
-   }*/
- 
-
+// }
+// .footer__container {
+//    display: flex;
+//    align-items: baseline;
+//    padding-top: 60px;
+//    padding-bottom: 60px;
+// }
+// .filtre__container{
+//    padding-top: var(--section-top);
+//    padding-bottom: var(--section-btm);
+//    }
