@@ -1,3 +1,10 @@
+
+   @media screen and (max-width: 1200px) {
+    .doing-list{
+        display: none;
+    }
+}
+
 .doing-list{
     @extend %flex-container;
     margin-left: -30px;

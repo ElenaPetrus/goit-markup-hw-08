@@ -22,15 +22,19 @@
    padding-top: var(--section-btm-ntdt);
    padding-bottom: var(--section-btm-ntdt);
 } 
+   .team__container{
+      padding-top: var(--section-btm-ntdt);
+      padding-bottom: var(--section-btm-ntdt);
+      }
 
-.clients__container{
-   padding-top: var(--section-top-ntdt);
-   padding-bottom: var(--section-btm-ntdt);
-}
-
+   .clients__container{
+      padding-top: var(--section-btm-ntdt);
+      padding-bottom: var(--section-btm-ntdt);
+   }
+   
    .footer__container {
-   padding-top: 60px;
-   padding-bottom: 60px;
+   padding-top:var(--section-btm-ntdt);
+   padding-bottom: var(--section-btm-ntdt);
    }
 
 @media screen and (min-width:480px){
@@ -52,22 +56,16 @@
       width:768px;
    }  
    .advantages__container{
-      flex-direction: row;
-   }
-   .advantages__container{
-      padding-top: var(--section-top-ntdt);
-      padding-bottom:var(---section-btm-ntdt);
-   }
-   .clients__container{
-      padding-top:var(--section-top-ntdt);
-      padding-bottom: var(--section-btm-ntdt);
-   }
+       flex-direction: row;
+    }
+   
    .footer__container{
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
       justify-content: center;
    }
+}
 
 @media screen and (min-width:1200px){
    .container{
@@ -78,31 +76,30 @@
       }
    .advantages__container{
       padding-top: var(--section-top);
-      padding-bottom:var(--section-btm);
+      padding-bottom: var(--section-btm);
    }
+   .competence__container{
+       padding-bottom: var(--section-btm);
+    }
    .clients__container{
       padding-top: var(--section-top);
       padding-bottom: var(--section-btm);
       }
-
-   }     
+   .footer__container{
+   padding-top: var(--section-top);
+   padding-bottom: var(--section-btm);
+   }  
+   .team__container{
+   padding-top: var(--section-top);
+   padding-bottom: var(--section-btm);
+   }  
 }  
 
 
-// .competence__container{
-//    padding-bottom: var(--section-btm);
-// }
-// .team__container{
-//    padding-top: var(--section-top);
-//    padding-bottom: var(--section-btm);
-// }
+
+
 // .filtre__container{
 //    padding-top: var(--section-top);
 //    padding-bottom: var(--section-btm);
 //    }
-// .footer__container {
-//    display: flex;
-//    align-items: baseline;
-//    padding-top: 60px;
-//    padding-bottom: 60px;
-//    }
+

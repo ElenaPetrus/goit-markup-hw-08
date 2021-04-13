@@ -23,14 +23,14 @@
             </a>
             <ul class="menu-list list">
                 <li class="menu-list__item">
-                    <a class="menu-list__link link" href="./index.html">Студия</a></li>
+                    <a class="menu-list__link link " href="./index.html">Студия</a></li>
                 <li class="menu-list__item">
                     <a class="menu-list__link link menu-list__link--active" href="./portfolio.html">Портфолио</a></li>
                 <li class="menu-list__item">
                     <a class="menu-list__link link" href="">Контакты</a></li> 
             </ul>
         </nav> 
-        <ul class="contact-list  contact-list list">  
+        <ul class="contact-list   list">  
             <li class="contact-list__item">
                 <a class="contact-list__link link" href="mailto:info@devstudio.com" lang="en">
                     <svg class="contact-list__icon" width="16px" height="12px" >
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="contact-list__item">
-                <a class="contact-list__link contact-list__link--anime2 link" href="tel:+380961111111">
+                <a class="contact-list__link contact-list__link--anime2  link" href="tel:+380961111111">
                 <svg class="contact-list__icon" width="10px" height="16px" >
                     <use href="./images/icons.svg#icon-mobile"></use>
                 </svg> 
@@ -48,7 +48,63 @@
                 </a>
             </li>
         </ul>
-    </div>          
+        <button type="button" class="burger-btn" data-menu-button>
+            <svg class="burger-btn__icon" width="24px" height="16px">
+                <use  href="./images/icons.svg#icon-menu_24px" ></use>
+            </svg>
+        </button>
+        </div> 
+        <div class="mob-menu" data-menu>
+            <button type="button" class="mob-close-btn" data-menu-close>
+                <svg class="mob-close-btn__icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button> 
+            <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link menu-list__link--active" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="">Контакты</a></li> 
+            </ul>
+        <div>
+            <ul class="mob-contact__list  list">  
+                <li class="mob-contact__item">
+                    <a class="mob-contact__link--tel  link" href="tel:+380961111111"> 
+                    +38 096 111 11 11</a> 
+                </li>
+                <li class="mob-contact__item">
+                    <a class="mob-contact__link--mail link" href="mailto:info@devstudio.com" lang="en">
+                    info@devstudio.com</a>
+                </li>
+            </ul>
+            <div class="mob-social">
+        <ul class="mob-social__list list">
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link link" target="_blank" rel="noopener noreferrer">
+                Instagram
+                </a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link link" target="_blank" rel="noopener noreferrer">
+                Twitter
+            </a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link link" target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+            </li>
+            <li class="mob-social__item">
+                <a href="" class="mob-social__link link" target="_blank" rel="noopener noreferrer">
+                LinkedIn  
+            </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+        </div>        
     </header>
     <main>
      <!--project selector-->
@@ -199,7 +255,7 @@
     <!--contacts-->
     <footer class="footer">
         <div class="container footer__container">
-        <section class="contact footer__contact">
+        <div class="contact footer__contact">
         <h3 class="visually-hidden">Как с нами связаться</h3>
         <a href="/" lang="en" class=" logo footer__logo  link">Web<span class="logo__part2--light link">Studio</span>
         </a>
@@ -215,55 +271,56 @@
                 </li>
             </ul>
         </address>
-        </section>
+    </div>
 
-        <section class="join-networks footer__join-networks">
-            <h2 class="visually-hidden">Мы в соцсетях</h2>
-            <b class="join-networks__text">Присоединяйтесь</b>
-            <ul class="social-list list">
-                <li class="social-list__item">
-                    <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-list__icon" width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>  
-                </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-list__icon" width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>  
-                </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-list__icon" width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>  
-                </a>
-                </li>
-                <li class="social-list__item">
-                    <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
-                    <svg class="social-list__icon" width="20px" height="20px">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>  
-                </a>
-                </li>
-                </ul>
-            </section>
-            <section class="signup">
-            <h2 class="visually-hidden">Подисаться на рассылку</h2>
-            <b class="signup__text">Подпишитесь на расслыку</b>
-            <form class="sign-form">
-                <input type="email" name="use-email" placeholder="E-mail" class="sign-form__input" required>
-                <button class="sign-form__btn" type="submit">Подписаться
-                <svg class="sign-form__icon" width="24px" height="24px">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-            </button>
-            </form>
-            </section>
-    </div> 
+        <div class="join-networks footer__join-networks">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <b class="join-networks__text">Присоединяйтесь</b>
+        <ul class="social-list list">
+            <li class="social-list__item">
+                <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
+                <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>  
+            </a>
+            </li>
+            <li class="social-list__item">
+                <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
+                <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>  
+            </a>
+            </li>
+            <li class="social-list__item">
+                <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
+                <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>  
+            </a>
+            </li>
+            <li class="social-list__item">
+                <a href="" class="social-list__link--dark link" target="_blank" rel="noopener noreferrer">
+                <svg class="social-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>  
+            </a>
+            </li>
+            </ul>
+        </div>
+        <div class="signup">
+        <h2 class="visually-hidden">Подисаться на рассылку</h2>
+        <b class="signup__text">Подпишитесь на расслыку</b>
+        <form class="sign-form">
+            <input type="email" name="use-email" placeholder="E-mail" class="sign-form__input" required>
+            <button class="sign-form__btn" type="submit">Подписаться
+            <svg class="sign-form__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        </form>
+    </div>
+    </div>  
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
