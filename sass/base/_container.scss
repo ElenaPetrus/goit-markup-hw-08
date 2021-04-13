@@ -36,6 +36,11 @@
    padding-top:var(--section-btm-ntdt);
    padding-bottom: var(--section-btm-ntdt);
    }
+   
+   .filtre__container{
+      padding-top: var(--section-btm-ntdt);
+      padding-bottom: var(--section-btm-ntdt);
+   }  
 
 @media screen and (min-width:480px){
    .container{
@@ -86,20 +91,21 @@
       padding-bottom: var(--section-btm);
       }
    .footer__container{
-   padding-top: var(--section-top);
-   padding-bottom: var(--section-btm);
+      padding-top: var(--section-top);
+      padding-bottom: var(--section-btm);
    }  
    .team__container{
-   padding-top: var(--section-top);
-   padding-bottom: var(--section-btm);
+      padding-top: var(--section-top);
+      padding-bottom: var(--section-btm);
+   }
+   
+   .filtre__container{
+      padding-top: var(--section-top);
+      padding-bottom: var(--section-btm);
    }  
 }  
 
 
 
 
-// .filtre__container{
-//    padding-top: var(--section-top);
-//    padding-bottom: var(--section-btm);
-//    }
 
