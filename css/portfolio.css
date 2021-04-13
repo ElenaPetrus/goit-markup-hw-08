@@ -576,10 +576,6 @@ button {
   width: 100%;
 }
 
-.projects__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .projects__name {
   font-family: var(--main-font);
   font-weight: bold;
@@ -641,6 +637,12 @@ button {
 .projects__link:hover .projects__overlay,
 .projects__link:focus .projects__overlay {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 480px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
