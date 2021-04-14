@@ -596,7 +596,7 @@ button {
 }
 
 .projects__description {
-  padding: 20px 24px;
+  padding: 20px 0 20px 24px;
   border: 1px solid var(--project-border-color);
   border-top: none;
 }
@@ -639,7 +639,7 @@ button {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .projects__item:not(:last-child) {
     margin-bottom: 30px;
   }
