@@ -2,8 +2,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px ;
-    height: 581px;
+    width: 320px ;
     padding: 40px 40px;
     background: var(--contrast-color);
     border-radius: 4px;
@@ -37,5 +36,23 @@
      .modal{
         transform: translate(-50%, -50%) scale(0.5);
     }
+
+}
+
+@media screen and (min-width:460px){
+    .modal{
+        left: 50%;
+        width: 450px ;
+        height: 609px;  
+        }
+    }
+
+
+
+@media screen and (min-width:1200px){
+.modal{
+    width: 528px ;
+    height: 581px;
+}
 }
 

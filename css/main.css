@@ -89,6 +89,7 @@ img {
 
 .hero__container {
   text-align: center;
+  padding: 131px 60px 118px;
 }
 
 .advantages__container {
@@ -146,6 +147,9 @@ img {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
+  }
+  .hero__container {
+    padding: 118px 204px;
   }
 }
 
@@ -313,8 +317,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 320px;
   padding: 40px 40px;
   background: var(--contrast-color);
   border-radius: 4px;
@@ -349,6 +352,21 @@ button {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
+@media screen and (min-width: 460px) {
+  .modal {
+    left: 50%;
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -356,11 +374,12 @@ button {
 
 .modal-form__user-data {
   display: block;
+  text-align: center;
   margin-bottom: 12px;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.50;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
@@ -454,10 +473,11 @@ button {
 .checkbox-wrapper__check {
   display: flex;
   align-items: center;
+  flex-direction: column;
   font-family: var(--main-font);
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-collor);
 }
@@ -492,8 +512,8 @@ button {
 .checkbox-wrapper__terms {
   font-family: var(--main-font);
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
@@ -501,6 +521,27 @@ button {
 
 .modal-form__checkbox-wrapper {
   margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 460px) {
+  .checkbox-wrapper__check {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__user-data {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .checkbox-wrapper__check {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .checkbox-wrapper__terms {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .header {
@@ -535,6 +576,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 50%;
     width: 100vw;
@@ -741,26 +783,13 @@ button {
   margin: 0 auto;
 }
 
-.hero__overlay {
-  max-width: 1600px;
-  height: 600;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url("../images/hero/desktop/bg-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--bg-hero-color);
-}
-
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--contrast-color);
-  max-width: 696px;
   margin: 0 auto 30px;
 }
 
@@ -776,6 +805,57 @@ button {
   min-width: 200px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__overlay {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url("../images/hero/bg-img-mob@1x.jpg");
+  background-color: var(--bg-hero-color);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url("../images/hero/bg-img-mob@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    max-width: 1199px;
+    background-image: url("../images/hero/bg-img-tab@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url("../images/hero/bg-img-tab@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    max-width: 1600px;
+    background-image: url("../images/hero/bg-img-dt@1x.jpg");
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: url("../images/hero/bg-img-dt@2x.jpg");
+  }
 }
 
 .advantages-list__image {

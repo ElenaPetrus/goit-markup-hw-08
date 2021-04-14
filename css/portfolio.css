@@ -83,6 +83,7 @@ img {
 
 .hero__container {
   text-align: center;
+  padding: 131px 60px 118px;
 }
 
 .advantages__container {
@@ -140,6 +141,9 @@ img {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
+  }
+  .hero__container {
+    padding: 118px 204px;
   }
 }
 
@@ -369,6 +373,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 50%;
     width: 100vw;
