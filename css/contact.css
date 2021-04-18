@@ -585,17 +585,31 @@ button {
   padding-bottom: 60px;
 }
 
-.reviews____image {
+.reviews__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.reviews__image {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background-color: var(--section-color);
   border-radius: 4px;
 }
 
-.reviews____name {
+.reviews__link {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.reviews__client-link {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 14px;
@@ -607,17 +621,12 @@ button {
   margin-bottom: 10px;
 }
 
-.reviews____description {
+.reviews__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--secondary-collor);
-}
-
-@media screen and (max-width: 767px) {
-  .reviews__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
